@@ -1,56 +1,162 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Last-Mile Cold Chain System — Project</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Last-Mile Cold Chain System</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f3f7f4;
+        color: #233;
+        line-height: 1.6;
+    }
+
+    header {
+        background: linear-gradient(to bottom right, #cde7d8, #e9f6ec);
+        padding: 40px 20px;
+        text-align: center;
+        border-bottom: 3px solid #b6d4bd;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 32px;
+        color: #1f4d1d;
+        font-weight: 700;
+    }
+
+    header p {
+        margin-top: 10px;
+        font-size: 18px;
+        color: #3d6b38;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 12px 20px;
+        background: #2e7d32;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: 0.2s ease;
+    }
+
+    .btn:hover {
+        background: #256628;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+
+    section {
+        background: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        border-left: 5px solid #2e7d32;
+    }
+
+    h2 {
+        margin-top: 0;
+        color: #1f4d1d;
+    }
+
+    ul {
+        margin-left: 20px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 15px;
+        background: #e8f5e9;
+        margin-top: 30px;
+        border-top: 2px solid #c9decf;
+        color: #2e462f;
+    }
+</style>
 </head>
+
 <body>
-  <header class="hero">
-    <h1>Last-Mile Cold Chain System for Vaccines</h1>
-    <p class="subtitle">Team Enneagon — Portable solar-powered solution for remote regions</p>
-    <a class="btn" href="assets/Green White Aesthetic Group Project Presentation.pdf" target="_blank">Download Project PDF</a>
-  </header>
 
-  <main class="content">
+<header>
+    <h1>Last-Mile Cold Chain System</h1>
+    <p>Portable Solar-Powered Vaccine Storage for Remote Regions</p>
+
+    <!-- Replace the href with your PDF path -->
+    <a class="btn" href="Green White Aesthetic Group Project Presentation.pdf" target="_blank">
+        Download Project PDF
+    </a>
+</header>
+
+<div class="container">
+
     <section>
-      <h2>Problem Statement</h2>
-      <p>Vaccines lose potency outside the 2–8°C range. Remote regions lack reliable electricity which leads to cold chain failures and high wastage. Our solution focuses on affordability, portability, and durability.</p>
+        <h2>Problem Statement</h2>
+        <p>
+            Vaccines lose potency outside the 2–8°C range. Remote rural areas lack reliable electricity,
+            leading to high wastage. Our project focuses on an affordable, portable, solar-powered cold chain
+            system to maintain safe storage conditions.
+        </p>
     </section>
 
     <section>
-      <h2>Objectives</h2>
-      <ul>
-        <li>Maintain temperature constantly (2–8°C)</li>
-        <li>Operate independently of grid electricity</li>
-        <li>Provide a reliable, sustainable vaccine storage</li>
-      </ul>
+        <h2>Objectives</h2>
+        <ul>
+            <li>Maintain temperature between 2–8°C consistently</li>
+            <li>Run entirely on solar power to remove dependency on the electric grid</li>
+            <li>Provide portability for transportation in remote areas</li>
+            <li>Ensure vaccine safety and reduce spoilage percentage</li>
+        </ul>
     </section>
 
     <section>
-      <h2>System Design (Summary)</h2>
-      <p>The design uses solar panels, thermal energy storage (PCM packs), vacuum insulated box and an ESP32 for monitoring (Wi‑Fi/Bluetooth). See page images and diagram in the PDF for sketches and layout (refer to the system design on page 6 of the PDF).</p>
+        <h2>System Design Summary</h2>
+        <p>
+            The cold chain system uses a combination of:
+        </p>
+        <ul>
+            <li>Solar charging unit</li>
+            <li>Vacuum insulated storage chamber</li>
+            <li>Phase Change Materials (PCM) for thermal storage</li>
+            <li>Microcontroller system (ESP32) for temperature monitoring</li>
+        </ul>
+        <p>
+            Full diagrams and architecture are available inside the PDF report.
+        </p>
     </section>
 
     <section>
-      <h2>Advantages & Impact</h2>
-      <ul>
-        <li>Sustainability via solar power</li>
-        <li>Reliability during outages</li>
-        <li>Low operating cost and scalability</li>
-        <li>Improved vaccine safety — reduced spoilage</li>
-      </ul>
+        <h2>Advantages & Impact</h2>
+        <ul>
+            <li>Eco-friendly due to solar power</li>
+            <li>Reliable during power outages</li>
+            <li>Low running cost, suitable for villages</li>
+            <li>Improves vaccine quality in remote areas</li>
+        </ul>
     </section>
 
     <section>
-      <h2>SDG Contributions</h2>
-      <p>Contributes to SDG 3 (Good Health), SDG 9 (Industry & Innovation), and SDG 13 (Climate Action). For details, see the PDF (pages 7-9).</p>
+        <h2>Sustainable Development Goals (SDG)</h2>
+        <ul>
+            <li>SDG 3: Good Health & Well-being</li>
+            <li>SDG 9: Innovation & Infrastructure</li>
+            <li>SDG 13: Climate Action</li>
+        </ul>
     </section>
 
-    <footer>
-      <p>Project PDF included in <strong>/assets</strong>. You can host this folder on GitHub Pages (instructions in README).</p>
-    </footer>
-  </main>
+</div>
+
+<footer>
+    Last-Mile Cold Chain System © 2025 — Team Project Interface
+</footer>
+
 </body>
 </html>
